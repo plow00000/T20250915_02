@@ -4,18 +4,20 @@ using namespace std;
 
 int main()
 {
-    int Sum = 0;
-    int MultipleOf3 = 0;
+    int Number[10] = { 0, };
 
-    for (int i = 1; i <= 100; i++)
+    for (int i = 0; i < 5; ++i)
     {
-        Sum += i;
-        if (i % 3 == 0)
+        for (int j = 0; j < i; ++j)
         {
-            MultipleOf3 += i;
-		}
+            cout << ' ';
+        }
+        for (int j = i; j < 5; ++j)
+        {
+            cout << '*';
+        }
+        cout << endl;
     }
 
-    cout << "1~100까지의 모든 숫자의 합 : " << Sum << endl;
-	cout << "1~100까지의  3의 배수의 합 : " << MultipleOf3 << endl;
+    return 0;
 }
